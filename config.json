@@ -2,40 +2,6 @@
     "fastqc" : "/home/heeger/bin/FastQC/fastqc",
     "multiqc": "multiqc",
     "rsem2matrix": "/home/heeger/bin/trinityrnaseq-Trinity-v2.5.1/util/misc/merge_RSEM_output_to_matrix.pl",
-    "signalp": "/home/heeger/bin/signalp-4.1/signalp",
-    "fileNames": {
-        "BUBWO": "11586.7.212667.ACTGAT",
-        "BUBWP": "11586.7.212667.ATTCCT",
-        "BUAHS": "11586.6.212653.ATCACG",
-        "BUAHT": "11586.6.212653.CGATGT",
-        "BUAHU": "11586.6.212653.TTAGGC",
-        "BUAHW": "11586.6.212653.TGACCA",
-        "BUAHX": "11586.6.212653.ACAGTG",
-        "BUAHY": "11586.6.212653.GCCAAT",
-        "BUAHZ": "11586.6.212653.CAGATC",
-        "BUANA": "11586.6.212653.ACTTGA",
-        "BUANB": "11586.6.212653.GATCAG",
-        "BUANC": "11586.6.212653.TAGCTT",
-        "BUANG": "11586.6.212653.GGCTAC",
-        "BUANH": "11586.6.212653.CTTGTA"
-    },
-    "sampleNames": {
-        "BUBWO" : "A3",
-        "BUBWP" : "A4",
-        "BUBWO-ss" : "A3_17M",
-        "BUBWP-ss" : "A4_17M",
-        "BUAHS" : "A6",
-        "BUAHT" : "A7",
-        "BUAHU" : "A9",
-        "BUAHW" : "B1",
-        "BUAHX" : "B3",
-        "BUAHY" : "B5",
-        "BUAHZ" : "D1",
-        "BUANA" : "D3",
-        "BUANB" : "D4",
-        "BUANC" : "E2",
-        "BUANG" : "E3",
-        "BUANH" : "E4"
-    }
+    "signalp": "/home/heeger/bin/signalp-4.1/signalp"
 
 }
