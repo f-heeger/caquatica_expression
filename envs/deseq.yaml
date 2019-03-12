@@ -1,0 +1,7 @@
+channels:
+    - bioconda
+    - r
+dependencies:
+    - bioconductor-deseq2=1.22.1
+    - bioconductor-tximport=1.10.0
+    - r-readr=1.1.1
