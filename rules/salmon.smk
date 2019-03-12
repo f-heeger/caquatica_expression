@@ -14,23 +14,17 @@ rule salmon_index:
     wrapper:
         "0.31.1/bio/salmon/index"
 
-def salmon_quant_reads_input(wildcards):
-    cSamples = []
-    for sId, sData in samples.items():
-        if sData["condNum"] == wildcards.condition:
-            cSamples.append(sId)
-    return {"r": ["reads/%s.fastq.gz" % s for s in  cSamples], "index": "salmon/transcriptome_index"}
-
 rule salmon_quant_reads:
     input:
         # If you have multiple fastq files for a single sample (e.g. technical replicates)
         # use a list for r1 and r2.
-        unpack(salmon_quant_reads_input)
+        r="reads/{sample}.fastq.gz",
+        index="salmon/transcriptome_index"
     output:
-        quant = 'salmon/{condition}/quant.sf',
-        lib = 'salmon/{condition}/lib_format_counts.json'
+        quant = 'salmon/{sample}/quant.sf',
+        lib = 'salmon/{sample}/lib_format_counts.json'
     log:
-        'logs/salmon/{condition}.log'
+        'logs/salmon/{sample}.log'
     params:
         # optional parameters
         libtype ="A",
